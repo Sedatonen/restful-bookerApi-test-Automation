@@ -36,15 +36,11 @@ public class HelperMetods {
         return randomElement;
     }
 
-    public static String getRandomDepositPaid() {
+    public static boolean getRandomDepositPaid() {
         Random r = new Random();
-        List<String> myList = new ArrayList<>();
-        myList.add("Breakfast");
-        myList.add("Dinner");
-        int randomItem = r.nextInt(myList.size());
-        String randomElement;
-        randomElement = myList.get(randomItem);
-        return randomElement;
+        boolean value;
+        value=r.nextBoolean();
+        return value;
     }
 
 
@@ -53,7 +49,7 @@ public class HelperMetods {
         int month = faker.random().nextInt(1, 12);
         int day = faker.random().nextInt(1, 30);
         String date;
-        date = "2015/" + month + "/" + day;
+        date = "2015-" + month + "-" + day;
         return date;
     }
 
@@ -62,7 +58,7 @@ public class HelperMetods {
         int month = faker.random().nextInt(1, 12);
         int day = faker.random().nextInt(1, 30);
         String date;
-        date = "2016/" + month + "/" + day;
+        date = "2016-" + month + "-" + day;
         return date;
     }
 

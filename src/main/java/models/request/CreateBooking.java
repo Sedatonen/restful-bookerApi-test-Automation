@@ -18,7 +18,7 @@ public @Data class CreateBooking{
 	private int totalprice=getRandomTotalPrice();
 
 	@Builder.Default
-	private String depositpaid=getRandomDepositPaid();
+	private boolean depositpaid=getRandomDepositPaid();
 
 	@Builder.Default
 	private Bookingdates bookingdates=Bookingdates.builder().build();

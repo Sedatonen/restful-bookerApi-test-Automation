@@ -14,7 +14,7 @@ public class RequestSpec {
 
     public static RequestSpecification requestSpecification() {
         return new RequestSpecBuilder().build()
-                .accept(ContentType.JSON)
+                //.accept(ContentType.JSON)
                 .contentType(ContentType.JSON)
                 .baseUri(BOOKS_API_URL);
     }
